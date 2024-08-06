@@ -1,6 +1,7 @@
 'use server'
 
 import { clerkClient } from "@clerk/nextjs/server";
+import { parseStringify } from "../utils";
 
 export const getClerkUser = async ({userIds}: {userIds : string[]}) => {
     try {
@@ -15,8 +16,7 @@ export const getClerkUser = async ({userIds}: {userIds : string[]}) => {
           
       }))
         const sortedUsers = userIds.map((email) => users.find((user) => user.email === email)) 
-
-        return sortedUsers;
+        return parseStringify(sortedUsers);
     } catch (error) {
         console.log("Error fetching user", error);
     }
