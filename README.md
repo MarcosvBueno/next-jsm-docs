@@ -16,7 +16,6 @@ O **next-jsm-docs** é uma aplicação web que permite que múltiplos usuários 
 - [Lexical Editor](https://lexical.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [ShadCN UI](https://ui.shadcn.dev/)
-- [Zod](https://zod.dev/) — para validação de dados
 
 ## Preview🎥
 
